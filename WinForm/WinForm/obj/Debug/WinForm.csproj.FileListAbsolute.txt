@@ -1,0 +1,39 @@
+D:\csprojects\ActivatorCore\WinForm\WinForm\bin\Debug\WinForm.exe.config
+D:\csprojects\ActivatorCore\WinForm\WinForm\bin\Debug\WinForm.exe
+D:\csprojects\ActivatorCore\WinForm\WinForm\bin\Debug\WinForm.pdb
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.exe
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.pdb
+D:\csprojects\ActivatorCore\Project\WinForm.exe.config
+D:\csprojects\ActivatorCore\Project\WinForm.exe
+D:\csprojects\ActivatorCore\Project\WinForm.pdb
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.MyQueue.resources
+D:\csprojects\ActivatorCore\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
+D:\csprojects\WinForm\WinForm\bin\Debug\WinForm.exe.config
+D:\csprojects\WinForm\WinForm\bin\Debug\WinForm.exe
+D:\csprojects\WinForm\WinForm\bin\Debug\WinForm.pdb
+D:\csprojects\WinForm\WinForm\bin\Debug\ActivatorLib.dll
+D:\csprojects\WinForm\WinForm\bin\Debug\ActivatorLib.pdb
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.csproj.CopyComplete
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.exe
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.pdb
+D:\csprojects\WinForm\WinForm\obj\Debug\WinForm.Form1.resources
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Debug\WinForm.exe.config
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Debug\WinForm.exe
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Debug\WinForm.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Debug\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Debug\ActivatorLib.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.Form1.resources
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.csproj.CopyComplete
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.exe
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache

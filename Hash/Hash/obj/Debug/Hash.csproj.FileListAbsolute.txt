@@ -1,6 +1,0 @@
-D:\csprojects\Hash\Hash\obj\Debug\Hash.csproj.AssemblyReference.cache
-D:\csprojects\Hash\Hash\obj\Debug\Hash.csproj.CoreCompileInputs.cache
-D:\csprojects\Hash\Hash\bin\Debug\Hash.dll
-D:\csprojects\Hash\Hash\bin\Debug\Hash.pdb
-D:\csprojects\Hash\Hash\obj\Debug\Hash.dll
-D:\csprojects\Hash\Hash\obj\Debug\Hash.pdb

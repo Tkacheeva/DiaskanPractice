@@ -1,0 +1,22 @@
+D:\csprojects\WinForm\ActivatorLib\bin\Debug\ActivatorLib.dll
+D:\csprojects\WinForm\ActivatorLib\bin\Debug\ActivatorLib.pdb
+D:\csprojects\WinForm\ActivatorLib\obj\Debug\ActivatorLib.csproj.CoreCompileInputs.cache
+D:\csprojects\WinForm\ActivatorLib\obj\Debug\ActivatorLib.dll
+D:\csprojects\WinForm\ActivatorLib\obj\Debug\ActivatorLib.pdb
+D:\csprojects\WinForm\ActivatorLib\obj\Debug\ActivatorLib.csproj.AssemblyReference.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\bin\Debug\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\bin\Debug\ActivatorLib.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Debug\ActivatorLib.csproj.CoreCompileInputs.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Debug\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Debug\ActivatorLib.pdb
+D:\csprojects\TaskManager\WinForm\ActivatorLib\bin\Debug\ActivatorLib.dll
+D:\csprojects\TaskManager\WinForm\ActivatorLib\bin\Debug\ActivatorLib.pdb
+D:\csprojects\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.csproj.CoreCompileInputs.cache
+D:\csprojects\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.dll
+D:\csprojects\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.pdb
+C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\ActivatorLib\bin\Debug\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\ActivatorLib\bin\Debug\ActivatorLib.pdb
+C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.csproj.AssemblyReference.cache
+C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.csproj.CoreCompileInputs.cache
+C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\ActivatorLib\obj\Debug\ActivatorLib.pdb

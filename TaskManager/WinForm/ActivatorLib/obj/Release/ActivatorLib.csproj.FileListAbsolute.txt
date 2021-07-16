@@ -1,0 +1,11 @@
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\bin\Release\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\bin\Release\ActivatorLib.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Release\ActivatorLib.csproj.AssemblyReference.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Release\ActivatorLib.csproj.CoreCompileInputs.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Release\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\ActivatorLib\obj\Release\ActivatorLib.pdb
+D:\csprojects\TaskManager\WinForm\ActivatorLib\bin\Release\ActivatorLib.dll
+D:\csprojects\TaskManager\WinForm\ActivatorLib\bin\Release\ActivatorLib.pdb
+D:\csprojects\TaskManager\WinForm\ActivatorLib\obj\Release\ActivatorLib.csproj.CoreCompileInputs.cache
+D:\csprojects\TaskManager\WinForm\ActivatorLib\obj\Release\ActivatorLib.dll
+D:\csprojects\TaskManager\WinForm\ActivatorLib\obj\Release\ActivatorLib.pdb

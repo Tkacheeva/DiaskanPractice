@@ -1,0 +1,28 @@
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.csproj.AssemblyReference.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.Form1.resources
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.Properties.Resources.resources
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.csproj.GenerateResource.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.csproj.CoreCompileInputs.cache
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Release\WinForm.exe.config
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Release\WinForm.exe
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Release\WinForm.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Release\ActivatorLib.dll
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\bin\Release\ActivatorLib.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.csproj.CopyComplete
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.exe
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.pdb
+C:\Users\serge\OneDrive\Рабочий стол\WinForm\WinForm\obj\Release\WinForm.Form2.resources
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Release\WinForm.exe.config
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Release\WinForm.exe
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Release\WinForm.pdb
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Release\ActivatorLib.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Release\ActivatorLib.pdb
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.csproj.AssemblyReference.cache
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.Form1.resources
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.Form2.resources
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.Properties.Resources.resources
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.csproj.GenerateResource.cache
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.csproj.CoreCompileInputs.cache
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.csproj.CopyComplete
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.exe
+D:\csprojects\TaskManager\WinForm\WinForm\obj\Release\WinForm.pdb

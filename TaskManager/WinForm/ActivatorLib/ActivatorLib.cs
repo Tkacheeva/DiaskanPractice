@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Collections;
 using System.Threading;
+using System.Timers;
 
 namespace ActivatorLib
 {
@@ -46,18 +47,23 @@ namespace ActivatorLib
         {
             msgL = new List<Msg>();
             tasksList = new List<Task>();
-            Timer t = new Timer(TimerCallback, null, 0, 500);
+            System.Timers.Timer t = new System.Timers.Timer(500);
+            t.Elapsed += TimerCallback;
+            t.AutoReset = true;
+            t.Enabled = true;
         }
 
-        private void TimerCallback(Object o)
+        private void TimerCallback(Object source, ElapsedEventArgs e)
         {
-            msgL.ForEach(delegate (Msg task) {
-                if (task.status == 0)
+            for (int i = 0; i < msgL.Count; i++)
+            {
+                if (msgL[i].status == 0)
                 {
                     Thread myThread = new Thread(new ParameterizedThreadStart(Launch));
-                    myThread.Start(task);
+                    myThread.Start(msgL[i]);
+                    return;
                 }
-            });
+            }
         }
 
         public void RemoveTask(int index)
@@ -93,17 +99,16 @@ namespace ActivatorLib
             int index = msgL.IndexOf(t);
             t.status = Msg.Status.Executing;
             msgL[index] = t;
-
-            asm = Assembly.LoadFrom(ts.path);
-            typeOfClass = asm.GetType(ts.type, true, true);
-            obj = System.Activator.CreateInstance(typeOfClass);
-            mInfo = typeOfClass.GetMethod(ts.method);
             try
             {
+                asm = Assembly.LoadFrom(ts.path);
+                typeOfClass = asm.GetType(ts.type, true, true);
+                obj = System.Activator.CreateInstance(typeOfClass);
+                mInfo = typeOfClass.GetMethod(ts.method);
+
                 mInfo.Invoke(obj, new object[] { t.message });
                 t.status = Msg.Status.Success;
                 msgL[index] = t;
-
             }
             catch 
             {

@@ -33,28 +33,26 @@ namespace WinForm
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Type = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NameTask = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Method = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PathDll
             // 
-            this.PathDll.Location = new System.Drawing.Point(12, 72);
+            this.PathDll.Location = new System.Drawing.Point(16, 89);
+            this.PathDll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PathDll.Name = "PathDll";
-            this.PathDll.Size = new System.Drawing.Size(270, 20);
+            this.PathDll.Size = new System.Drawing.Size(359, 22);
             this.PathDll.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(288, 72);
+            this.button1.Location = new System.Drawing.Point(384, 89);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 20);
+            this.button1.Size = new System.Drawing.Size(33, 25);
             this.button1.TabIndex = 1;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
@@ -63,9 +61,10 @@ namespace WinForm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 52);
+            this.label1.Location = new System.Drawing.Point(12, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Путь до DLL";
             // 
@@ -74,59 +73,30 @@ namespace WinForm
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "DLL | *.dll";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Класс";
-            // 
-            // Type
-            // 
-            this.Type.Location = new System.Drawing.Point(12, 120);
-            this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(270, 20);
-            this.Type.TabIndex = 3;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 9);
+            this.label3.Location = new System.Drawing.Point(12, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Название задачи";
             // 
             // NameTask
             // 
-            this.NameTask.Location = new System.Drawing.Point(12, 29);
+            this.NameTask.Location = new System.Drawing.Point(16, 36);
+            this.NameTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NameTask.Name = "NameTask";
-            this.NameTask.Size = new System.Drawing.Size(270, 20);
+            this.NameTask.Size = new System.Drawing.Size(359, 22);
             this.NameTask.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 152);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Вызывающий метод";
-            // 
-            // Method
-            // 
-            this.Method.Location = new System.Drawing.Point(12, 172);
-            this.Method.Name = "Method";
-            this.Method.Size = new System.Drawing.Size(270, 20);
-            this.Method.TabIndex = 7;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(207, 216);
+            this.button2.Location = new System.Drawing.Point(275, 154);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 9;
             this.button2.Text = "Добавить";
             this.button2.UseVisualStyleBackColor = true;
@@ -134,9 +104,10 @@ namespace WinForm
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(286, 216);
+            this.button3.Location = new System.Drawing.Point(380, 154);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 10;
             this.button3.Text = "Отмена";
             this.button3.UseVisualStyleBackColor = true;
@@ -144,20 +115,17 @@ namespace WinForm
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 251);
+            this.ClientSize = new System.Drawing.Size(497, 192);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Method);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NameTask);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Type);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.PathDll);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -171,12 +139,8 @@ namespace WinForm
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Type;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox NameTask;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Method;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }

@@ -31,13 +31,13 @@ namespace WinForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (PathDll.Text == "" || Type.Text == "" || NameTask.Text == "" || Method.Text == "")
+            if (PathDll.Text == "" || NameTask.Text == "" )
             {
                 MessageBox.Show("Данные введены не полностью");
                 return;
             }
 
-            Form1.act.AddNewTask(NameTask.Text, PathDll.Text, Type.Text, Method.Text);
+            Form1.act.AddNewTask(NameTask.Text, PathDll.Text);
             Program.f1.toolStripSplitButton1.DropDownItems.Add(NameTask.Text);
             Program.f1.toolStripSplitButton1.DropDownItems[Program.f1.toolStripSplitButton1.DropDownItems.Count - 1].Click += new EventHandler(Program.f1.ComputeTask);
             this.Close();

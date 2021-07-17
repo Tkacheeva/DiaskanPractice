@@ -32,10 +32,8 @@ namespace ActivatorLib
     {
         public string name;
         public string path;
-        public string type;
-        public string method;
 
-        public Task(string n, string p, string t, string m) => (name, path, type, method) = (n, p, t, m);
+        public Task(string n, string p) => (name, path) = (n, p);
     }
     
     public class Launcher
@@ -75,9 +73,9 @@ namespace ActivatorLib
             msgL.Add(new Msg(type, message, 0));
         }
 
-        public void AddNewTask(string name, string path, string type, string method)
+        public void AddNewTask(string name, string path)
         {
-            tasksList.Add(new Task(name, path, type, method));
+            tasksList.Add(new Task(name, path));
         }
 
         public Msg[] CheckList()
@@ -102,10 +100,10 @@ namespace ActivatorLib
             try
             {
                 asm = Assembly.LoadFrom(ts.path);
-                typeOfClass = asm.GetType(ts.type, true, true);
+                typeOfClass = asm.GetTypes()[0];
+                mInfo = typeOfClass.GetMethods(BindingFlags.Public | BindingFlags.Static)[0];                
                 obj = System.Activator.CreateInstance(typeOfClass);
-                mInfo = typeOfClass.GetMethod(ts.method);
-
+ 
                 mInfo.Invoke(obj, new object[] { t.message });
                 t.status = Msg.Status.Success;
                 msgL[index] = t;

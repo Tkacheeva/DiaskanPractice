@@ -39,23 +39,24 @@ namespace WinForm
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.AddNewTask = new System.Windows.Forms.ToolStripDropDownButton();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
+            this.columnHeader1,
+            this.columnStatus});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(16, 15);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(485, 468);
@@ -114,6 +115,11 @@ namespace WinForm
             this.AddNewTask.Text = "Добавить новую задачу";
             this.AddNewTask.Click += new System.EventHandler(this.AddNewTask_Click);
             // 
+            // columnStatus
+            // 
+            this.columnStatus.Text = "Статус";
+            this.columnStatus.Width = 120;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -140,6 +146,7 @@ namespace WinForm
         public System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ToolStripDropDownButton AddNewTask;
+        private System.Windows.Forms.ColumnHeader columnStatus;
     }
 }
 

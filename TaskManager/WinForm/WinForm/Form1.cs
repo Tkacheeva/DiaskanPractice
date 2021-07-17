@@ -44,10 +44,30 @@ namespace WinForm
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            if (act.Launch())
+            listView1.Items.Clear();
+            Msg[] arrTasks = act.CheckList();
+            if (arrTasks != null)
             {
-                MessageBox.Show("Task complete!");
-                listView1.Items.Remove(listView1.Items[0]);
+                for (int i = 0; i < arrTasks.Length; i++)
+                {
+                    ListViewItem item = new ListViewItem(toolStripSplitButton1.DropDownItems[arrTasks[i].type].Text);         
+                    switch ((int)arrTasks[i].status)
+                    {
+                        case 0:       
+                            item.SubItems.Add("Ожидание");
+                            break;
+                        case 1:
+                            item.SubItems.Add("Выполняется");
+                            break;
+                        case 2:
+                            item.SubItems.Add("Успешно");
+                            break;
+                        case 3:
+                            item.SubItems.Add("Неуспешно");
+                            break;
+                    }
+                    listView1.Items.Add(item);
+                }
             }
         
             timer1.Enabled = true;

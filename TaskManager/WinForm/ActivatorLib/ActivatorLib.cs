@@ -28,10 +28,7 @@ namespace ActivatorLib
     
     public class Launcher
     {
-        private Assembly asm;
-        private Type typeOfClass;
-        private object obj;
-        private MethodInfo mInfo;
+
         private List<Task> tasksList;
         private List<Msg> msgL;    
 
@@ -39,48 +36,6 @@ namespace ActivatorLib
         {
             msgL = new List<Msg>();
             tasksList = new List<Task>();
-        }
-        public bool LoadLib(string DllName)
-        {
-            asm = Assembly.LoadFrom(DllName);
-            if (asm == null)
-                return false;
-
-            return true;
-        }
-
-        public bool CreateInstance(Type typeOfClass)
-        {
-            obj = System.Activator.CreateInstance(typeOfClass);
-
-            if (obj == null)
-                return false;
-            return true;
-        }
-
-        public bool GetType(string type)
-        {
-            typeOfClass = asm.GetType(type, true, true);
-
-            if (typeOfClass != null)
-                return true;
-            return false;
-        }
-
-        public bool GetMethod(string method)
-        {
-            mInfo = typeOfClass.GetMethod(method);
-            if (mInfo != null)
-                return true;
-
-            return false;
-        }
-
-        public object Invoke(object arg)
-        {
-            object res = mInfo.Invoke(obj, new object[] { arg });
-
-            return res;
         }
 
         public void RemoveTask(int index)
@@ -98,23 +53,28 @@ namespace ActivatorLib
         }
 
         public bool Launch()
-        {          
+        {
+            Assembly asm;
+            Type typeOfClass;
+            object obj;
+            MethodInfo mInfo;
+
             if (msgL.Count != 0)
             {
                 Msg tmp = msgL[0];
                 Task ts = tasksList[tmp.type];
+                
 
                 msgL.RemoveAt(0);
-
-                LoadLib(ts.path);
-                GetType(ts.type);
-                CreateInstance(typeOfClass);
-                GetMethod(ts.method);
-                object res = Invoke(tmp.message);
-                string[] arr = ((IEnumerable)res).Cast<object>().Select(x => x.ToString()).ToArray();
-                       
-                foreach (string o in arr)
-                    Console.WriteLine(o);
+                asm = Assembly.LoadFrom(ts.path);
+                string t = asm.GetType().GetTypeInfo().FullName;
+                // = typeof().GetTypeInfo();
+                string s1 = asm.ToString();
+                string s = Assembly.GetExecutingAssembly().GetName().Name;
+                typeOfClass = asm.GetType(ts.type, true, true);
+                obj = System.Activator.CreateInstance(typeOfClass);
+                mInfo = typeOfClass.GetMethod(ts.method);
+                mInfo.Invoke(obj, new object[] { tmp.message });                      
             }
             else
                 return false;

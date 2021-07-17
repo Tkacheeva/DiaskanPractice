@@ -26,6 +26,7 @@ namespace WinForm
 
             act = new Launcher();            
         }
+
         public void ComputeTask(object sender, EventArgs e)
         {
             ToolStripMenuItem senderButton = (ToolStripMenuItem)sender;
@@ -44,24 +45,20 @@ namespace WinForm
         {
             timer1.Enabled = false;
             if (act.Launch())
+            {
+                MessageBox.Show("Task complete!");
                 listView1.Items.Remove(listView1.Items[0]);
+            }
         
             timer1.Enabled = true;
-            }
-
-        private void HashingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        
         }
+
         private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedIndices.Count != 0)
                 toolStripDropDownButton1.Enabled = true;
             else
                toolStripDropDownButton1.Enabled = false;
-
-
         }
 
         private void toolStripDropDownButton1_Click(object sender, EventArgs e)

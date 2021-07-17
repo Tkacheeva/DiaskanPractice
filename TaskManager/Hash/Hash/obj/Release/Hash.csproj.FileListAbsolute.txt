@@ -1,0 +1,5 @@
+D:\csprojects\TaskManager\Hash\Hash\bin\Release\Hash.dll
+D:\csprojects\TaskManager\Hash\Hash\bin\Release\Hash.pdb
+D:\csprojects\TaskManager\Hash\Hash\obj\Release\Hash.csproj.CoreCompileInputs.cache
+D:\csprojects\TaskManager\Hash\Hash\obj\Release\Hash.dll
+D:\csprojects\TaskManager\Hash\Hash\obj\Release\Hash.pdb

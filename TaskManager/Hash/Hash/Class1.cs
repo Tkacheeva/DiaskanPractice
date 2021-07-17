@@ -21,22 +21,24 @@ namespace Hash
             return sOutput.ToString();
         }
 
-        public static string[] Hashing(string path)
+        public static void Hashing(string path)
         {
             byte[] hashBytes;
             int i = 0;
-            string[] files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories); ;
+            string[] files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
             foreach (string file in files)
             {
                 using (var inputFileStream = File.OpenRead(file))
                 {
                     var md5 = MD5.Create();
                     hashBytes = md5.ComputeHash(inputFileStream);
-                    files[i] = ByteArrayToString(hashBytes);
+                    files[i] = ByteArrayToString(hashBytes) + "\t" + file;
                     i++;
                 }
             }
-            return files;
+
+            File.WriteAllLines(path + "hash.txt", files);
+
         }
     }
 }

@@ -1,0 +1,10 @@
+D:\csprojects\TaskManager\WinForm\Archvation\bin\Debug\Archvation.dll
+D:\csprojects\TaskManager\WinForm\Archvation\bin\Debug\Archvation.pdb
+D:\csprojects\TaskManager\WinForm\Archvation\obj\Debug\Archivation.csproj.CoreCompileInputs.cache
+D:\csprojects\TaskManager\WinForm\Archvation\obj\Debug\Archvation.dll
+D:\csprojects\TaskManager\WinForm\Archvation\obj\Debug\Archvation.pdb
+D:\csprojects\TaskManager\Archvation\bin\Debug\Archvation.dll
+D:\csprojects\TaskManager\Archvation\bin\Debug\Archvation.pdb
+D:\csprojects\TaskManager\Archvation\obj\Debug\Archivation.csproj.CoreCompileInputs.cache
+D:\csprojects\TaskManager\Archvation\obj\Debug\Archvation.dll
+D:\csprojects\TaskManager\Archvation\obj\Debug\Archvation.pdb

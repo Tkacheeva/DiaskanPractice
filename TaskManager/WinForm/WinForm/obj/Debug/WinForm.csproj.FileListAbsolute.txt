@@ -41,7 +41,6 @@ D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\WinForm.exe.config
 D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\WinForm.exe
 D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\WinForm.pdb
 D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\ActivatorLib.dll
-D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\ActivatorLib.pdb
 D:\csprojects\TaskManager\WinForm\WinForm\obj\Debug\WinForm.Form1.resources
 D:\csprojects\TaskManager\WinForm\WinForm\obj\Debug\WinForm.Form2.resources
 D:\csprojects\TaskManager\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resources
@@ -64,4 +63,5 @@ C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\WinForm\obj\
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\WinForm\obj\Debug\WinForm.exe
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\WinForm\obj\Debug\WinForm.pdb
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\ActivatorLib.pdb
 D:\csprojects\TaskManager\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache

@@ -34,12 +34,12 @@ namespace WinForm
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.AddNewTask = new System.Windows.Forms.ToolStripDropDownButton();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,11 @@ namespace WinForm
             // 
             this.columnHeader1.Text = "Задача";
             this.columnHeader1.Width = 257;
+            // 
+            // columnStatus
+            // 
+            this.columnStatus.Text = "Статус";
+            this.columnStatus.Width = 120;
             // 
             // statusStrip1
             // 
@@ -114,11 +119,6 @@ namespace WinForm
             this.AddNewTask.Size = new System.Drawing.Size(189, 24);
             this.AddNewTask.Text = "Добавить новую задачу";
             this.AddNewTask.Click += new System.EventHandler(this.AddNewTask_Click);
-            // 
-            // columnStatus
-            // 
-            this.columnStatus.Text = "Статус";
-            this.columnStatus.Width = 120;
             // 
             // Form1
             // 

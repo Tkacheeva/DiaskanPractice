@@ -8,13 +8,18 @@ using System.Collections;
 using System.Threading;
 using System.Timers;
 
+
 namespace ActivatorLib
 {
-
-    public struct Msg
+    public struct TaskList
     {
-        public int type;
-        public string message;
+        public string TaskName;
+        public string DllPath;
+        public string type;
+        public string method;
+        public string PathToRun;
+        public string startTime;
+        public string endTime;
         public enum Status
         {
             Expectation = 0,
@@ -25,40 +30,30 @@ namespace ActivatorLib
 
         public Status status;
 
-        public Msg(int t, string m, Status s) => (type, message, status) = (t, m, s);
-    }
-
-    public struct Task
-    {
-        public string name;
-        public string path;
-
-        public Task(string n, string p) => (name, path) = (n, p);
+        public TaskList(string tn, string d, string t, string m, string p, string st, string et, Status s) => (TaskName, DllPath, type, method, PathToRun, startTime, endTime, status) = (tn, d, t, m, p, st, et, s);
     }
     
     public class Launcher
     {
-        private List<Task> tasksList;
-        private List<Msg> msgL;
+        private List<TaskList> taskL;
 
         public Launcher()
         {
-            msgL = new List<Msg>();
-            tasksList = new List<Task>();
-            System.Timers.Timer t = new System.Timers.Timer(500);
-            t.Elapsed += TimerCallback;
-            t.AutoReset = true;
-            t.Enabled = true;
+            taskL = new List<TaskList>();
+            System.Timers.Timer goal = new System.Timers.Timer(500);
+            goal.Elapsed += TimerCallback;
+            goal.AutoReset = true;
+            goal.Enabled = true;
         }
 
         private void TimerCallback(Object source, ElapsedEventArgs e)
         {
-            for (int i = 0; i < msgL.Count; i++)
+            for (int i = 0; i < taskL.Count; i++)
             {
-                if (msgL[i].status == 0)
+                if (taskL[i].status == 0)
                 {
-                    Thread myThread = new Thread(new ParameterizedThreadStart(Launch));
-                    myThread.Start(msgL[i]);
+                    Task myTask = new Task(() => Launch(taskL[i]));
+                    myTask.Start();
                     return;
                 }
             }
@@ -66,52 +61,48 @@ namespace ActivatorLib
 
         public void RemoveTask(int index)
         {
-            msgL.RemoveAt(index);
+            taskL.RemoveAt(index);
         }
-        public void AddTask(int type, string message)
+        public void AddTask(TaskList goal, string path)
         {
-            msgL.Add(new Msg(type, message, 0));
-        }
-
-        public void AddNewTask(string name, string path)
-        {
-            tasksList.Add(new Task(name, path));
+            taskL.Add(new TaskList(goal.TaskName, goal.DllPath, goal.type, goal.method, path, null, null, 0));
         }
 
-        public Msg[] CheckList()
+        public TaskList[] CheckList()
         {
-            if (msgL.Count != 0)
-                return msgL.ToArray();
+            if (taskL.Count != 0)
+                return taskL.ToArray();
             return null;
         }
 
-        public void Launch(object tmp)
+        public void Launch(object input)
         {
             Assembly asm;
             Type typeOfClass;
             object obj;
             MethodInfo mInfo;
 
-            Msg t = (Msg)tmp;
-            Task ts = tasksList[t.type];
-            int index = msgL.IndexOf(t);
-            t.status = Msg.Status.Executing;
-            msgL[index] = t;
+            TaskList goal = (TaskList)input;
+            int index = taskL.IndexOf(goal);
+            goal.status = TaskList.Status.Executing;
+            taskL[index] = goal;
             try
             {
-                asm = Assembly.LoadFrom(ts.path);
-                typeOfClass = asm.GetTypes()[0];
-                mInfo = typeOfClass.GetMethods(BindingFlags.Public | BindingFlags.Static)[0];                
+                asm = Assembly.LoadFrom(goal.DllPath);
+                typeOfClass = asm.GetType(goal.type, true, true);
                 obj = System.Activator.CreateInstance(typeOfClass);
- 
-                mInfo.Invoke(obj, new object[] { t.message });
-                t.status = Msg.Status.Success;
-                msgL[index] = t;
+                mInfo = typeOfClass.GetMethod(goal.method);
+                goal.startTime = DateTime.Now.ToString();
+                mInfo.Invoke(obj, new object[] { goal.PathToRun });
+                goal.endTime = DateTime.Now.ToString();
+                goal.status = TaskList.Status.Success;
+                taskL[index] = goal;
             }
             catch 
             {
-                t.status = Msg.Status.Failure;
-                msgL[index] = t;
+                goal.startTime = DateTime.Now.ToString();
+                goal.status = TaskList.Status.Failure;
+                taskL[index] = goal;
             }
         }
 

@@ -12,19 +12,27 @@ using System.Windows.Forms;
 using System.Timers;
 using ActivatorLib;
 using System.IO;
+using Npgsql; 
 
 namespace WinForm
 {
     public partial class Form1 : Form
     {
         public static Launcher act;
+        public Dictionary<int, TaskList> taskInfo = new Dictionary<int, TaskList>();
+        private string connString = "Host=localhost;Username=postgres;Password=a6145415k;Database=TaskManagerDB";
+        private NpgsqlConnection conn;
+
         private Form2 Forms2cs = new Form2();
+
         public Form1()
         {
             Program.f1 = this;
             InitializeComponent();
 
-            act = new Launcher();            
+            act = new Launcher();
+            conn = new NpgsqlConnection(connString);
+            conn.Open();
         }
 
         public void ComputeTask(object sender, EventArgs e)
@@ -36,7 +44,7 @@ namespace WinForm
                 if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     listView1.Items.Add(senderButton.Text);
-                    act.AddTask(index, fbd.SelectedPath);
+                    act.AddTask(taskInfo[index], fbd.SelectedPath);
                 }
             }
         }
@@ -45,12 +53,14 @@ namespace WinForm
         {
             timer1.Enabled = false;
             listView1.Items.Clear();
-            Msg[] arrTasks = act.CheckList();
+            TaskList[] arrTasks = act.CheckList();
+            string res;
+
             if (arrTasks != null)
             {
                 for (int i = 0; i < arrTasks.Length; i++)
                 {
-                    ListViewItem item = new ListViewItem(toolStripSplitButton1.DropDownItems[arrTasks[i].type].Text);         
+                    ListViewItem item = new ListViewItem(arrTasks[i].TaskName);         
                     switch ((int)arrTasks[i].status)
                     {
                         case 0:       
@@ -60,9 +70,23 @@ namespace WinForm
                             item.SubItems.Add("Выполняется");
                             break;
                         case 2:
+                            res = arrTasks[i].TaskName + " Начало: " + arrTasks[i].startTime + " Конец: " + arrTasks[i].endTime + " Success";
+                            using (var command = new NpgsqlCommand("INSERT INTO results (res) VALUES (@p);", conn))
+                            {
+                                command.Parameters.AddWithValue("p", res);
+                                command.ExecuteNonQuery();
+                            }
+                            act.RemoveTask(i);
                             item.SubItems.Add("Успешно");
                             break;
                         case 3:
+                            res = arrTasks[i].TaskName + " Начало: " + arrTasks[i].startTime + " Failure";
+                            using (var command = new NpgsqlCommand("INSERT INTO results (res) VALUES (@p)", conn))
+                            {
+                                command.Parameters.AddWithValue("p", res);
+                                command.ExecuteNonQuery();
+                            }
+                            act.RemoveTask(i);
                             item.SubItems.Add("Неуспешно");
                             break;
                     }

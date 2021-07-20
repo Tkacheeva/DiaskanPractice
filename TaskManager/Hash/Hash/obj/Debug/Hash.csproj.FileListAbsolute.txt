@@ -15,3 +15,4 @@ C:\Users\serge\OneDrive\Рабочий стол\TaskManager\Hash\Hash\obj\Debug\
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\Hash\Hash\obj\Debug\Hash.csproj.CoreCompileInputs.cache
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\Hash\Hash\obj\Debug\Hash.dll
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\Hash\Hash\obj\Debug\Hash.pdb
+D:\csprojects\TaskManager\Hash\Hash\obj\Debug\Hash.csproj.AssemblyReference.cache

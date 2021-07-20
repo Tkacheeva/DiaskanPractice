@@ -6,7 +6,7 @@ D:\csprojects\TaskManager\WinForm\Archvation\obj\Release\Archvation.dll
 D:\csprojects\TaskManager\WinForm\Archvation\obj\Release\Archvation.pdb
 D:\csprojects\TaskManager\Archvation\bin\Release\Archvation.dll
 D:\csprojects\TaskManager\Archvation\bin\Release\Archvation.pdb
-D:\csprojects\TaskManager\Archvation\obj\Release\Archivation.csproj.AssemblyReference.cache
 D:\csprojects\TaskManager\Archvation\obj\Release\Archivation.csproj.CoreCompileInputs.cache
 D:\csprojects\TaskManager\Archvation\obj\Release\Archvation.dll
 D:\csprojects\TaskManager\Archvation\obj\Release\Archvation.pdb
+D:\csprojects\TaskManager\Archvation\obj\Release\Archivation.csproj.AssemblyReference.cache

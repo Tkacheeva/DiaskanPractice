@@ -65,3 +65,26 @@ C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\WinForm\obj\
 C:\Users\serge\OneDrive\Рабочий стол\TaskManager\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
 D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\ActivatorLib.pdb
 D:\csprojects\TaskManager\WinForm\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\Npgsql.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Buffers.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Memory.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Numerics.Vectors.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Text.Encodings.Web.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Text.Json.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Threading.Channels.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.ValueTuple.dll
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\ActivatorLib.dll.config
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\Npgsql.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Buffers.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Memory.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Numerics.Vectors.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Text.Encodings.Web.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Text.Json.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Threading.Channels.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\csprojects\TaskManager\WinForm\WinForm\bin\Debug\System.ValueTuple.xml

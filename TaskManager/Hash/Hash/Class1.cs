@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 
@@ -24,20 +25,18 @@ namespace Hash
         public static void Hashing(string path)
         {
             byte[] hashBytes;
-            int i = 0;
             string[] files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
-            foreach (string file in files)
+            List<string> res = new List<string>();
+            Parallel.ForEach(files, file => 
             {
                 using (var inputFileStream = File.OpenRead(file))
                 {
                     var md5 = MD5.Create();
                     hashBytes = md5.ComputeHash(inputFileStream);
-                    files[i] = ByteArrayToString(hashBytes) + "\t" + file;
-                    i++;
+                    res.Add(ByteArrayToString(hashBytes) + "\t" + file);
                 }
-            }
-
-            File.WriteAllLines(path + "hash.txt", files);
+            });
+            File.WriteAllLines(path + "hash.txt", res.ToArray());
 
         }
     }

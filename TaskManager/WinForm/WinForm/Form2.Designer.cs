@@ -30,13 +30,17 @@ namespace WinForm
         private void InitializeComponent()
         {
             this.PathDll = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddPath = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label3 = new System.Windows.Forms.Label();
             this.NameTask = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAddTask = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CBType = new System.Windows.Forms.ComboBox();
+            this.CBMethod = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // PathDll
@@ -47,16 +51,16 @@ namespace WinForm
             this.PathDll.Size = new System.Drawing.Size(359, 22);
             this.PathDll.TabIndex = 0;
             // 
-            // button1
+            // btnAddPath
             // 
-            this.button1.Location = new System.Drawing.Point(384, 89);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAddPath.Location = new System.Drawing.Point(384, 89);
+            this.btnAddPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddPath.Name = "btnAddPath";
+            this.btnAddPath.Size = new System.Drawing.Size(33, 25);
+            this.btnAddPath.TabIndex = 1;
+            this.btnAddPath.Text = "...";
+            this.btnAddPath.UseVisualStyleBackColor = true;
+            this.btnAddPath.Click += new System.EventHandler(this.btnAddPath_Click);
             // 
             // label1
             // 
@@ -91,43 +95,88 @@ namespace WinForm
             this.NameTask.Size = new System.Drawing.Size(359, 22);
             this.NameTask.TabIndex = 5;
             // 
-            // button2
+            // btnAddTask
             // 
-            this.button2.Location = new System.Drawing.Point(275, 154);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Добавить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnAddTask.Location = new System.Drawing.Point(199, 264);
+            this.btnAddTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddTask.Name = "btnAddTask";
+            this.btnAddTask.Size = new System.Drawing.Size(100, 28);
+            this.btnAddTask.TabIndex = 9;
+            this.btnAddTask.Text = "Добавить";
+            this.btnAddTask.UseVisualStyleBackColor = true;
+            this.btnAddTask.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnClose
             // 
-            this.button3.Location = new System.Drawing.Point(380, 154);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Отмена";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnClose.Location = new System.Drawing.Point(317, 264);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 28);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "Отмена";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 128);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Класс";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 187);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(140, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Вызывающий метод";
+            // 
+            // CBType
+            // 
+            this.CBType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBType.Enabled = false;
+            this.CBType.FormattingEnabled = true;
+            this.CBType.Location = new System.Drawing.Point(16, 149);
+            this.CBType.Name = "CBType";
+            this.CBType.Size = new System.Drawing.Size(359, 24);
+            this.CBType.TabIndex = 11;
+            this.CBType.SelectedIndexChanged += new System.EventHandler(this.CBType_SelectedIndexChanged);
+            // 
+            // CBMethod
+            // 
+            this.CBMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBMethod.Enabled = false;
+            this.CBMethod.FormattingEnabled = true;
+            this.CBMethod.Location = new System.Drawing.Point(16, 208);
+            this.CBMethod.Name = "CBMethod";
+            this.CBMethod.Size = new System.Drawing.Size(360, 24);
+            this.CBMethod.TabIndex = 12;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 192);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(426, 304);
+            this.Controls.Add(this.CBMethod);
+            this.Controls.Add(this.CBType);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnAddTask);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NameTask);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddPath);
             this.Controls.Add(this.PathDll);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Добавить новую задачу";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,12 +185,16 @@ namespace WinForm
         #endregion
 
         private System.Windows.Forms.TextBox PathDll;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddPath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox NameTask;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAddTask;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox CBType;
+        private System.Windows.Forms.ComboBox CBMethod;
     }
 }

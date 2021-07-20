@@ -26,17 +26,19 @@ namespace Hash
         {
             byte[] hashBytes;
             string[] files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
-            List<string> res = new List<string>();
-            Parallel.ForEach(files, file => 
-            {
-                using (var inputFileStream = File.OpenRead(file))
-                {
-                    var md5 = MD5.Create();
-                    hashBytes = md5.ComputeHash(inputFileStream);
-                    res.Add(ByteArrayToString(hashBytes) + "\t" + file);
-                }
+
+            Parallel.ForEach(files, (file, loopstate, i) =>
+            {  
+                    using (var inputFileStream = File.OpenRead(file))
+                    {
+                        var md5 = MD5.Create();
+                        hashBytes = md5.ComputeHash(inputFileStream);
+                        files[i] = ByteArrayToString(hashBytes) + "\t" + file;
+
+                    }                
             });
-            File.WriteAllLines(path + "hash.txt", res.ToArray());
+
+            File.WriteAllLines(path + "hash.txt", files);
 
         }
     }

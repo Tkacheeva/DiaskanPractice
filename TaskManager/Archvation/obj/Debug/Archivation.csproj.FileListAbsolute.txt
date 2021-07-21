@@ -9,3 +9,15 @@ D:\csprojects\TaskManager\Archvation\obj\Debug\Archivation.csproj.CoreCompileInp
 D:\csprojects\TaskManager\Archvation\obj\Debug\Archvation.dll
 D:\csprojects\TaskManager\Archvation\obj\Debug\Archvation.pdb
 D:\csprojects\TaskManager\Archvation\obj\Debug\Archivation.csproj.AssemblyReference.cache
+D:\A\DiaskanPractice\TaskManager\WinForm\Archvation\bin\Debug\Archvation.dll
+D:\A\DiaskanPractice\TaskManager\WinForm\Archvation\bin\Debug\Archvation.pdb
+D:\A\DiaskanPractice\TaskManager\WinForm\Archvation\obj\Debug\Archivation.csproj.AssemblyReference.cache
+D:\A\DiaskanPractice\TaskManager\WinForm\Archvation\obj\Debug\Archivation.csproj.CoreCompileInputs.cache
+D:\A\DiaskanPractice\TaskManager\WinForm\Archvation\obj\Debug\Archvation.dll
+D:\A\DiaskanPractice\TaskManager\WinForm\Archvation\obj\Debug\Archvation.pdb
+D:\A\DiaskanPractice\TaskManager\Archvation\bin\Debug\Archvation.dll
+D:\A\DiaskanPractice\TaskManager\Archvation\bin\Debug\Archvation.pdb
+D:\A\DiaskanPractice\TaskManager\Archvation\obj\Debug\Archivation.csproj.AssemblyReference.cache
+D:\A\DiaskanPractice\TaskManager\Archvation\obj\Debug\Archivation.csproj.CoreCompileInputs.cache
+D:\A\DiaskanPractice\TaskManager\Archvation\obj\Debug\Archvation.dll
+D:\A\DiaskanPractice\TaskManager\Archvation\obj\Debug\Archvation.pdb

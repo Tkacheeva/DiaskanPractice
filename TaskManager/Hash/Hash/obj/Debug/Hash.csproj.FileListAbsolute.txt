@@ -24,7 +24,6 @@ D:\A\DiaskanPractice\TaskManager\WinForm\Hash\Hash\obj\Debug\Hash.dll
 D:\A\DiaskanPractice\TaskManager\WinForm\Hash\Hash\obj\Debug\Hash.pdb
 D:\A\DiaskanPractice\TaskManager\Hash\Hash\bin\Debug\Hash.dll
 D:\A\DiaskanPractice\TaskManager\Hash\Hash\bin\Debug\Hash.pdb
-D:\A\DiaskanPractice\TaskManager\Hash\Hash\obj\Debug\Hash.csproj.AssemblyReference.cache
 D:\A\DiaskanPractice\TaskManager\Hash\Hash\obj\Debug\Hash.csproj.CoreCompileInputs.cache
 D:\A\DiaskanPractice\TaskManager\Hash\Hash\obj\Debug\Hash.dll
 D:\A\DiaskanPractice\TaskManager\Hash\Hash\obj\Debug\Hash.pdb

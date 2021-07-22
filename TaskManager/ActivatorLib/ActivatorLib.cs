@@ -30,16 +30,16 @@ namespace ActivatorLib
 
         public Status status;
 
-        public TaskList(string tn, string d, string t, string m, string p, string st, string et, Status s)
-        { 
-            TaskName = tn;
-            DllPath = d;
-            type = t;
-            method = m;
-            PathToRun = p;
-            startTime = st;
-            endTime = et;
-            status = s;
+        public TaskList(string TaskName, string DllPath, string type, string method, string PathToRun, string startTime, string endTime, Status status)
+        {
+            this.TaskName = TaskName;
+            this.DllPath = DllPath;
+            this.type = type;
+            this.method = method;
+            this.PathToRun = PathToRun;
+            this.startTime = startTime;
+            this.endTime = endTime;
+            this.status = status;
         }
     }
     

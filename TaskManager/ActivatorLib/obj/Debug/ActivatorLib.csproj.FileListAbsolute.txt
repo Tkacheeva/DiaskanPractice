@@ -94,7 +94,6 @@ D:\A\DiaskanPractice\TaskManager\ActivatorLib\bin\Debug\System.Text.Json.xml
 D:\A\DiaskanPractice\TaskManager\ActivatorLib\bin\Debug\System.Threading.Channels.xml
 D:\A\DiaskanPractice\TaskManager\ActivatorLib\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\A\DiaskanPractice\TaskManager\ActivatorLib\bin\Debug\System.ValueTuple.xml
-D:\A\DiaskanPractice\TaskManager\ActivatorLib\obj\Debug\ActivatorLib.csproj.AssemblyReference.cache
 D:\A\DiaskanPractice\TaskManager\ActivatorLib\obj\Debug\ActivatorLib.csproj.CoreCompileInputs.cache
 D:\A\DiaskanPractice\TaskManager\ActivatorLib\obj\Debug\ActivatorLib.csproj.CopyComplete
 D:\A\DiaskanPractice\TaskManager\ActivatorLib\obj\Debug\ActivatorLib.dll
